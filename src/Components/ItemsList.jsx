@@ -1,17 +1,16 @@
 import Filter from "./Filter";
 import Display from "./Display";
-
+import { useState } from "react";
 
 const ItemsList = () => {
-    return (
-        <div>
-        <Filter />
-        <h2>Here is a list of all items</h2>
-        <button>List new item</button>
-        <Display />
-    
-        </div>
-    )
-}
+	const [filterBy, setFilterBy] = useState("");
+	return (
+		<div className="body-container">
+			<Filter setFilterBy={setFilterBy} />
+			<button>List new item</button>
+			<Display filterBy={filterBy} />
+		</div>
+	);
+};
 
 export default ItemsList;

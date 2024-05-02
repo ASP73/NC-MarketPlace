@@ -1,45 +1,83 @@
 #root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
+	width: 100%;
+	display: grid;
+	grid-row: 15% 85%;
+}
+* {
+	box-sizing: border-box;
+}
+header {
+	height: 150px;
+	/* position: fixed; */
+	width: 100%;
+}
+body {
 	text-align: center;
 }
-
-.logo {
-	height: 6em;
-	padding: 1.5em;
-	will-change: filter;
-	transition: filter 300ms;
-}
-.logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	a:nth-of-type(2) .logo {
-		animation: logo-spin infinite 20s linear;
-	}
-}
-
 nav li {
 	list-style: none;
 	display: inline;
-	margin: 5px;
-	border: solid 3px blue;
+	margin: 2rem;
+	border: solid 3px rgb(1, 1, 24);
+	font-size: 2rem;
+	color: black;
+	text-decoration: double;
 }
 
 img {
 	margin: 20px;
+}
+.nav-bar {
+	width: 100%;
+	background-color: coral;
+	padding: 3px;
+}
+.header-container {
+	grid-row: 1;
+}
+.body-container {
+	width: 100%;
+	margin: 50px auto;
+	grid-row: 2;
+}
+.create-login-btn {
+	margin-top: 70px;
+	font-size: 2rem;
+	background-color: rgb(255, 157, 122);
+	padding: 5px;
+	border-radius: 10px;
+}
+.items-container {
+	text-align: center;
+}
+.item-card {
+	height: 300px;
+	width: 80%;
+	margin: 5px auto;
+	border: 2px solid;
+	display: flex;
+	justify-content: space-around;
+}
+.add-basket-btn {
+	margin-top: 30px;
+	padding: 2px;
+	height: fit-content;
+}
+.item-info-text {
+	text-align: right;
+	margin-right: 10px;
+}
+.filter-by-container {
+	display: inline;
+	width: 100%;
+}
+.filter-by-btn {
+	margin: 2px 10px;
+	padding: 3px;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.filter-chosen-btn {
+	background-color: rgb(232, 111, 67);
 }
