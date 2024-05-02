@@ -32,3 +32,14 @@
 		animation: logo-spin infinite 20s linear;
 	}
 }
+
+nav li {
+	list-style: none;
+	display: inline;
+	margin: 5px;
+	border: solid 3px blue;
+}
+
+img {
+	margin: 20px;
+}
