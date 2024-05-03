@@ -7,6 +7,7 @@ import Create_Login from "./Components/Create_Login";
 import NewItemAdder from "./Components/NewItemAdder";
 import SingleItem from "./Components/SingleItem";
 import { useState } from "react";
+import MyPage from "./Components/MyPage";
 
 function App() {
 	const [hasLogin, setHasLogin] = useState(false);
@@ -18,7 +19,7 @@ function App() {
 				<Route path="/items" element={<ItemsList />} />
 				<Route path="/items/:item_id" element={<SingleItem />} />
 				<Route path="/users" element={<Create_Login />} />
-				{/* <Route path="/users/:username" element={<MyPage />}/> */}
+				<Route path="/users/:username" element={<MyPage />}/>
 				<Route path="/items/list_item" element={<NewItemAdder />} />
 			</Routes>
 		</>

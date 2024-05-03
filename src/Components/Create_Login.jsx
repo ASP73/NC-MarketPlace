@@ -1,3 +1,6 @@
+import CreateAccountCard from "./CreateAccount";
+import LoginCard from "./Login";
+
 const Create_Login = () => {
 	return (
 		<>
@@ -7,6 +10,8 @@ const Create_Login = () => {
 					<button>Create Account</button>
 					<button>Login</button>
 				</div>
+				<CreateAccountCard />
+				<LoginCard />
 			</div>
 		</>
 	);

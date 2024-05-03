@@ -148,3 +148,7 @@ form input {
 	border: 3px solid;
 	height: 100px;
 }
+.avatar {
+	height: 150px;
+	width: 150px;
+}
