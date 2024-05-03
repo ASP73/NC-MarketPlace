@@ -46,6 +46,7 @@ img {
 	background-color: rgb(255, 157, 122);
 	padding: 5px;
 	border-radius: 10px;
+	cursor: pointer;
 }
 .items-container {
 	text-align: center;
@@ -68,11 +69,13 @@ img {
 	margin-right: 10px;
 }
 .filter-by-container {
-	display: inline;
-	width: 100%;
+	margin-top: 0.8rem;
+	display: flex;
+	width: 80%;
 }
-.filter-by-btn {
-	margin: 2px 10px;
+.filter-by-btn,
+#add-new-item-btn {
+	margin: 1rem;
 	padding: 3px;
 	font-size: 1.2rem;
 	border-radius: 5px;
@@ -80,4 +83,68 @@ img {
 }
 .filter-chosen-btn {
 	background-color: rgb(232, 111, 67);
+}
+.category-name-btn {
+	margin: 2px 10px;
+	padding: 3px;
+	font-size: 1.2rem;
+	font-style: italic;
+	border: none;
+	background-color: #e3ccfb;
+}
+.list-new-item-btn {
+	margin-top: 1rem;
+	width: 200px;
+	margin-right: 1rem;
+	padding: 2px;
+	margin: 0.5rem;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-radius: 10px;
+	box-shadow: #9868cb inset;
+	cursor: pointer;
+	background-color: rgba(255, 190, 166, 0.94);
+}
+.list-new-item-btn:hover {
+	transform: scale(1.2);
+}
+.row {
+	display: flex;
+}
+.animation-container {
+	width: 500px;
+	height: 500px;
+	text-align: center;
+	margin: 10px auto;
+}
+.form-container {
+	display: block;
+	width: 400px;
+	text-align: center;
+	margin-top: 60px;
+}
+.form-row {
+	margin: 50px 30px;
+	padding: 4px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.5rem;
+}
+form input {
+	background-color: aliceblue;
+	border: 2px solid;
+	border-radius: 10px;
+}
+#add-new-item-btn {
+	background-color: coral;
+	font-size: 1.5rem;
+	padding: 10px;
+}
+.toggle-div {
+	margin-top: 50px;
+	font-size: 1.5rem;
+	padding: 10px;
+	border: 3px solid;
+	height: 100px;
 }

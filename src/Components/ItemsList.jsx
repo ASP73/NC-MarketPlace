@@ -1,14 +1,16 @@
 import Filter from "./Filter";
 import Display from "./Display";
-import { useState } from "react";
+
+import { useSearchParams } from "react-router-dom";
 
 const ItemsList = () => {
-	const [filterBy, setFilterBy] = useState("");
+	const [searchParams, setSearchParams] = useSearchParams();
+
 	return (
 		<div className="body-container">
-			<Filter setFilterBy={setFilterBy} />
-			<button>List new item</button>
-			<Display filterBy={filterBy} />
+			<Filter searchParams={searchParams} setSearchParams={setSearchParams} />
+
+			<Display searchParams={searchParams} />
 		</div>
 	);
 };
